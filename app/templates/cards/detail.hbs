@@ -1,0 +1,20 @@
+<div class="modal-card">
+  <h3>Edit</h3>
+  <form action="">
+    <p>
+      <label for="">List</label>
+      {{input type="text" class="form-control" value=model.list}}
+    </p>
+    <p>
+      <label for="">Title</label>
+      {{input type="text" class="form-control" value=model.title}}
+    </p>
+    <div class="button-group">
+      {{#link-to "cards" class="btn btn-back"}}Close{{/link-to}}
+      <button class="btn btn-save" type="submit">Save</button>
+    </div>
+  </form>
+  <div class="modal-card-footer">
+    <button type="button" class="btn btn-delete" onclick={{action "deleteCard"}}></button>
+  </div>
+</div>
