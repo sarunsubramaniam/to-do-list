@@ -1,7 +1,7 @@
-import Controller from '@ember/controller';
+import Ember from 'ember';
 
-export default Controller.extend({
-  action: {
+export default Ember.Controller.extend({
+  actions: {
     updateCard(list, title) {
       this.model.setProperties({list, title});
       this.model.save();
